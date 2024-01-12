@@ -7,6 +7,7 @@
 </head>
 <body>
     <form action="../Controlador/controlaMostrar.php" method="post">
+        <h3>Mostrar todos los campeones</h3>
         <input type="submit" value="Mostrar Datos">
     </form>
     

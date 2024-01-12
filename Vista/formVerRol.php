@@ -9,16 +9,18 @@
     <form action="../Controlador/controlaMostrarRol.php" method="post">
         <label for="rol">Selecciona un Rol:</label>
         <select name="rol" id="rol">
+            <option selected disabled value="default">Selecciona un rol</option>
             <option value="Luchador">Luchador</option>
             <option value="Tirador">Tirador</option>
             <option value="Apoyo">Apoyo</option>
             <option value="Mago">Mago</option>
             <option value="Asesino">Asesino</option>
             <option value="Tanque">Tanque</option>
+            
 
         </select>
         <br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Mostrar">
     </form>
 </body>
 </html>
