@@ -1,81 +1,45 @@
 <?php
 
-    class Campeon{
-        private int $id;
-        private string $nombre;
-        private string $rol;
-        private string $dificultad;
-        private string $descripcion;
-        
+        class Campeon {
+                // Miembros privados de la clase
+                private int $idCampeon;
+                private string $nombre;
+                private string $rol;
+                private string $dificultad;
+                private string $descripcion;
+                
+                public function getIdCampeon(): int {
+                return $this->idCampeon;
+                }
 
-        
-        public function getId()
-        {
-                return $this->id;
-        }
+                public function getNombre() {
+                        return $this->nombre;
+                    }
 
-         
-        public function setId($id)
-        {
-                $this->id = $id;
-
-                return $this;
-        }
-
-         
-        public function getNombre()
-        {
-                return $this->nombre;
-        }
-
-         
-        public function setNombre($nombre)
-        {
+                public function setNombre(string $nombre): void {
                 $this->nombre = $nombre;
+                }
 
-                return $this;
-        }
-
-         
-        public function getRol()
-        {
+                public function getRol(): string {
                 return $this->rol;
-        }
-
-        
-        public function setRol($rol)
-        {
+                }
+                public function setRol(string $rol): void {
                 $this->rol = $rol;
+                }
 
-                return $this;
-        }
-
-         
-        public function getDificultad()
-        {
+                public function getDificultad(): string {
                 return $this->dificultad;
-        }
-
-         
-        public function setDificultad($dificultad)
-        {
+                }
+                public function setDificultad(string $dificultad): void {
                 $this->dificultad = $dificultad;
+                }
 
-                return $this;
-        }
-
-        
-        public function getDescripcion()
-        {
+                public function getDescripcion(): string {
                 return $this->descripcion;
-        }
-
-        
-        public function setDescripcion($descripcion){
+                }
+                public function setDescripcion(string $descripcion): void {
                 $this->descripcion = $descripcion;
-
-                return $this;
+                }
         }
-    }
 
 ?>

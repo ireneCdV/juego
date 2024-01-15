@@ -12,7 +12,7 @@
         <input type="submit" name="ver_campeones_rol" value="Ver Campeones por ROL">
         <input type="submit" name="insertar_campeon" value="Insertar Campeon ">
         <input type="submit" name="buscar_campeon" value="Buscar Campeon">
-
+        
     </form>
     
 </body>
