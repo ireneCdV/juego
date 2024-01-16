@@ -94,9 +94,6 @@ include_once 'Campeon.php';
             return $resultados;
         }
 
-
-        
-        
             public static function modificarCampeon(Campeon $campeon) : bool {
                 $result = false;
     
@@ -120,8 +117,6 @@ include_once 'Campeon.php';
             }
         
         
-    
-        
         public static function eliminarCampeon($nombre): bool {
             try {
                 // Establecemos conexión con la BBDD
@@ -138,6 +133,7 @@ include_once 'Campeon.php';
                 return false;
             }
         }
+
     }
 
 ?>
