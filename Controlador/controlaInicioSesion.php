@@ -8,14 +8,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $resultadoInicioSesion = UsuarioDB::InicioSesion($usuario, $pwd);
 
     if ($resultadoInicioSesion && password_verify($pwd,$resultadoInicioSesion['pwd'])) {
-        echo "Sesión iniciada correctamente";
-        // Redirige a la página de inicio de sesión
-        header("Location: ../Vista/formIndex.php");
-        exit();
+        echo "USUARIO CORRECTAMENTE LOGUEADO";
+
+        // Mostrar un botón para redirigir a otra página
+        echo '<form action="../Vista/formIndex.php" method="get">';
+        echo '<br>';
+        echo '<input type="submit" value="Pulse aquí para ir al juego">';
+        echo '</form>';
+
     } else {
-        echo "Fallo al iniciar sesión";
+        echo "El usuario introducido no existe en la BBDD";
     }
 
-    
 }
 ?>

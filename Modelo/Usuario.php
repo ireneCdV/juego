@@ -2,10 +2,10 @@
     class Usuario{
         // Miembros privados de la clase
         private int $id;
-        private int $nombre;
-        private int $usuario;
-        private int $pwd;
-        private int $email;
+        private string $nombre;
+        private string $usuario;
+        private string $pwd;
+        private string $email;
 
     
         public function getId(){

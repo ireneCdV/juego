@@ -10,11 +10,15 @@
         $resultadoRegistro = UsuarioDB::Registro($nombre, $usuario, $pwd, $email);
     
         if ($resultadoRegistro) {
-            // El registro fue exitoso
-            echo "Registro exitoso. Puedes iniciar sesión ahora.";
-            // Redirige a la página de inicio de sesión
-            header("Location: ../Vista/formIniciarSesion.php");
-            exit();
+            // Mostrar el mensaje 
+            echo "El usuario $usuario ha sido introducido en el sistema con la contraseña $pwd";
+
+            // Mostrar un botón para redirigir a otra página
+            echo '<form action="../Vista/formIniciarSesion.php" method="get">';
+            echo '<br>';
+            echo '<input type="submit" value="Pulse aquí para ir a inicio sesión">';
+            echo '</form>';
+            
         } else {
             // Error en el registro
             echo "Error al registrar el usuario. Por favor, intenta nuevamente.";

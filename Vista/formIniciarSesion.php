@@ -12,7 +12,7 @@
         <input type="text" name="usuario" required>
         <br>
         <br>
-        <label for="">Contraseña: </label>
+        <label for="password">Contraseña: </label>
         <input type="password" name="pwd" required>
         <br>
         <br>
